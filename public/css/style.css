@@ -1,0 +1,17 @@
+html, body {
+  padding: 20px;
+  background-color: grey;
+}
+
+h1 {
+  color: white;
+  font-size: 20px;
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  color: white;
+}
