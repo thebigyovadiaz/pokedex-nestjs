@@ -5,18 +5,22 @@
 # Configure application
 
 1. Clone repository
+
 2. Install dependencies
 ```
 yarn install
 ```
+
 3. Install Nest CLI
 ```
 npm i -g @nestjs/cli
 ```
+
 4. Start up database
 ```
 docker-compose up -d
 ```
+
 #
 # Start application
 
@@ -24,9 +28,15 @@ docker-compose up -d
 ```
 yarn start
 ```
+
 2. Start mode developer
 ```
 yarn start:dev
+```
+
+3. Rebuild Database with seed
+```
+http://localhost:3000/api/v2/seed
 ```
 
 #
