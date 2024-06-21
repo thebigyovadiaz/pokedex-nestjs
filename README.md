@@ -24,19 +24,18 @@ docker-compose up -d
 #
 # Start application
 
-1. Start
-```
-yarn start
-```
+1. Clone file ```.env.template``` and rename for ```.env```
 
-2. Start mode developer
-```
-yarn start:dev
-```
+2. Filled environment variables in ```.env```
 
 3. Rebuild Database with seed
 ```
 http://localhost:3000/api/v2/seed
+```
+
+4. Start mode developer
+```
+yarn start:dev
 ```
 
 #
