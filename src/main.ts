@@ -3,6 +3,7 @@ import { AppModule } from './app.module';
 import { ValidationPipe } from '@nestjs/common';
 
 async function bootstrap() {
+  const port = process.env.PORT;
   const app = await NestFactory.create(AppModule);
 
   app.setGlobalPrefix('api/v2');
@@ -18,6 +19,7 @@ async function bootstrap() {
     }),
   );
 
-  await app.listen(process.env.PORT);
+  await app.listen(port);
+  console.log(`Server running on PORT ${port}`);
 }
 bootstrap();
