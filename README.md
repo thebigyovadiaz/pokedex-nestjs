@@ -39,6 +39,23 @@ yarn start:dev
 ```
 
 #
+# Production Build
+
+1. Create file ```.env.prod```
+
+2. Filled environment variables prod
+
+3. Create new image container
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
+
+4. Execute image container detach
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up -d
+```
+
+#
 # Stack used
 * [MondoDB](https://www.mongodb.com/)
 * [NestJS](https://nestjs.com/)
